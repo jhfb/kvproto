@@ -496,6 +496,7 @@ message AskBatchSplitRequest {
 message SplitID {
     uint64 new_region_id = 1;
     repeated uint64 new_peer_ids = 2;
+    repeated bool Recorder =3;
 }
 
 message AskBatchSplitResponse {
@@ -503,7 +504,6 @@ message AskBatchSplitResponse {
 
     repeated SplitID ids = 2;
 
-    repeated SplitType types =3;
 }
 
 message ReportBatchSplitRequest {
