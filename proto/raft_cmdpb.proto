@@ -146,7 +146,7 @@ message SplitRequest {
     // If true, right region derive the origin region_id, 
     // left region use new_region_id.
     // Will be ignored in batch split, use `BatchSplitRequest::right_derive` instead.
-    bool right_derive = 4 [deprecated=true];
+    bool right_derive = 5 [deprecated=true];
 }
 
 message SplitResponse {
