@@ -502,6 +502,8 @@ message AskBatchSplitResponse {
     ResponseHeader header = 1;
 
     repeated SplitID ids = 2;
+
+    repeated SplitType types =3;
 }
 
 message ReportBatchSplitRequest {
