@@ -143,10 +143,12 @@ message SplitRequest {
     repeated uint64 new_peer_ids = 3;
 
     repeated bool records = 4;
+
+    repeated bool is_rtof = 5;
     // If true, right region derive the origin region_id, 
     // left region use new_region_id.
     // Will be ignored in batch split, use `BatchSplitRequest::right_derive` instead.
-    bool right_derive = 5 [deprecated=true];
+    bool right_derive = 6 [deprecated=true];
 }
 
 message SplitResponse {
